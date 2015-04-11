@@ -9,7 +9,6 @@
 7.The trained random forest model is then used to make predictions for the 20 test data points (All of which got accepted :) )
 
 ![Plot of OOB error vs number of trees in forest](/errorVStrees.png)
-Format: ![Plot](url)
+
 
 ![Screenshot with all the details](/Screenshot.png)
-Format: ![Screenshot](url)
