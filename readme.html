@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Practical Machine Learning: Project Writeup</title>
+</head>
+<body>
+<h1>Practical Machine Learning: Project Writeup</h1>
+The R script does the following thing to solve this classification problem:
+<ul>
+    <li>It loads the data from the given train and test sets</li>
+    <li>It then does some data preprocessing like removing the first 6 columns. They contain dates, times, serial numbers etc. and hence we can get rid of them.</li>
+    <li>It then does some further pre-processing of the data by removing the columns which have NA's as these create problems while applying Machine Learning Algorithms</li>
+    <li>After that it builds a random forest classifier with 500 trees using all the remaining columns.</li>
+    <li>The forest generated has an Out of Bag error of 0.13% and confusion matrix and OOB error vs number of trees as shown in the screenshot and plot respectively</li>
+    <li>The trained random forest model is then used to make predictions for the 20 test data points (All of which got accepted :) )</li>
+</ul>
+
+ <h2>Out of Bag Error vs Number of trees plot</h2>
+ <img src="errorVStrees.png" alt="Plot" style="width:500px;height:400px">
+
+  <h2>R Screenshot showing code, plot, OOB error and confusion matrix</h2>
+ <img src="Screenshot.png" alt="Screenshot" style="width:1000px;height:700px">
+
+
+
+</body>
+</html>
